@@ -1,4 +1,4 @@
-.experience {
+.workouts {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -18,15 +18,16 @@
     }
   }
 
-  .experience-info {
+  .workouts-info {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 20px;
+    margin-bottom: 20px;
     max-width: 100%;
 
-    .experience-cards {
+    .workouts-cards {
       padding: 10px;
       border: 2px solid var(--bg-fundo);
       border-radius: 8px;
@@ -92,12 +93,12 @@
 }
 
 @media (width > 900px) {
-  .experience {
-    .experience-info {
+  .workouts {
+    .workouts-info {
       flex-direction: row;
       gap: 20px;
 
-      .experience-cards {
+      .workouts-cards {
         width: 400px;
         max-width: 100%;
       }
