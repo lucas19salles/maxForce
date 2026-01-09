@@ -14,9 +14,87 @@
       color: #d25115;
     }
   }
+
   p {
     font-size: clamp(0.785rem, 2vw, 3rem);
     padding-inline: 20px;
     text-align: center;
+  }
+  .title {
+    margin-bottom: 40px;
+  }
+
+  .cards-price {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+    padding-inline: 40px;
+
+    .price-info {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      text-align: left;
+      width: clamp(320px 4vw 500px);
+      padding: 20px;
+      border-radius: 12px;
+    }
+
+    .golden {
+      background-color: #110b09;
+      color: #dddbdb;
+    }
+
+    .max {
+      border: 2px solid #ececec;
+    }
+
+    .title-h3 {
+      font-size: clamp(1.4rem, 3vw, 2rem);
+    }
+    p {
+      font-size: clamp(0.785rem, 2vw, 1rem);
+      align-self: flex-start;
+      padding: 0;
+    }
+
+    .subtitle {
+      text-align: left;
+      font-size: 1rem;
+    }
+
+    .price-title {
+      text-decoration: line-through;
+    }
+
+    .price-xl {
+      font-size: clamp(1.6rem, 3vw, 2rem);
+      font-weight: 600;
+
+      span {
+        font-size: 0.875rem;
+        color: #d25115;
+      }
+    }
+
+    .btn-price {
+      padding: 10px;
+      border: none;
+      background-color: #d25115;
+      color: #ffffff;
+      border-radius: 20px;
+      margin-top: 20px;
+    }
+  }
+}
+
+@media (width > 900px) {
+  .price {
+    .cards-price {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 }
