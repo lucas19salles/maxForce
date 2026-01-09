@@ -1,0 +1,81 @@
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-inline: 40px;
+  margin: 0 auto;
+
+  img {
+    width: clamp(350px 3vw 1400px);
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+  }
+}
+
+.local {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+
+  h1 {
+    font-size: clamp(1.2rem, 3vw, 3rem);
+    text-align: center;
+    padding-bottom: 40px;
+
+    span {
+      color: #d25115;
+    }
+  }
+
+  .local-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("./../../image/local-gym.png");
+    background-repeat: repeat;
+    background-size: cover;
+    border-radius: 12px;
+    height: 240px;
+    width: 100%;
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 280px;
+      max-width: clamp(280px 4vw 320px);
+      background-color: #ffffff;
+      padding: 10px 20px;
+      text-align: center;
+      font-size: 1.2rem;
+      font-weight: 600;
+      cursor: pointer;
+      border-radius: 20px;
+      position: relative;
+
+      &:hover {
+        background-color: #d25115;
+        color: #ffffff;
+      }
+    }
+
+    button {
+      border: none;
+      background-color: transparent;
+
+      i {
+        position: absolute;
+        right: 10px;
+        bottom: 12px;
+        font-size: 1.2rem;
+
+        &:hover {
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}

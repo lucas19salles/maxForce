@@ -1,0 +1,7 @@
+@import url("./global.css"); /* Reset */
+
+@import url("./varieble.css"); /* Varieble */
+
+@import url("./pages/header.css"); /* Header */
+@import url("./pages/banner.css"); /* Banner */
+@import url("./pages/price.css"); /* Price */
