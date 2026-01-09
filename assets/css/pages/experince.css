@@ -46,6 +46,18 @@
 
       .description {
         font-weight: 600;
+        background-color: var(--color-font);
+        margin: 0;
+        padding: 10px 0;
+        color: var(--text-secondary);
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+      }
+
+      .foto {
+        border-radius: 0;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
       }
 
       ul {
