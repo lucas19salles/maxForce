@@ -12,7 +12,6 @@ body {
 
 a {
   text-decoration: none;
-  color: #000000;
 }
 
 ul {
@@ -25,8 +24,11 @@ img {
   display: block;
 }
 
-.btn-default {
+.btn-default.btn {
   display: none;
+}
+
+.btn-default {
   font-size: 1rem;
   border: none;
   background-color: #d1570b;

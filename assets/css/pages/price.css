@@ -8,10 +8,10 @@
     font-size: clamp(1.2rem, 3vw, 3rem);
     padding-inline: 20px;
     text-align: center;
-    margin-bottom: 10px;
+    margin-block: 40px 10px;
 
     span {
-      color: #d25115;
+      color: var(--color-font);
     }
   }
 
@@ -43,8 +43,8 @@
     }
 
     .golden {
-      background-color: #110b09;
-      color: #dddbdb;
+      background-color: var(--text-primary);
+      color: var(--text-secondary);
     }
 
     .max {
@@ -54,6 +54,7 @@
     .title-h3 {
       font-size: clamp(1.4rem, 3vw, 2rem);
     }
+
     p {
       font-size: clamp(0.785rem, 2vw, 1rem);
       align-self: flex-start;
@@ -75,17 +76,42 @@
 
       span {
         font-size: 0.875rem;
-        color: #d25115;
+        color: var(--color-font);
+      }
+    }
+
+    .price-atual {
+      font-weight: normal;
+
+      span {
+        font-weight: 600;
       }
     }
 
     .btn-price {
       padding: 10px;
+      font-size: clamp(1rem, 3vw, 1.4rem);
       border: none;
-      background-color: #d25115;
-      color: #ffffff;
+      background-color: var(--color-font);
+      color: var(--text-secondary);
       border-radius: 20px;
       margin-top: 20px;
+    }
+
+    .price-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 20px;
+
+      i {
+        margin-right: 4px;
+        color: var(--color-font);
+      }
+
+      .no-plan {
+        color: #000000;
+      }
     }
   }
 }

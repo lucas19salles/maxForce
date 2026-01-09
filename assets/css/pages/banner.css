@@ -2,13 +2,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-inline: 40px;
-  margin: 0 auto;
+  padding-inline: 20px;
+  margin: 20px auto 0 auto;
 
   img {
     width: clamp(350px 3vw 1400px);
     max-width: 100%;
-    height: auto;
     border-radius: 12px;
   }
 }
@@ -18,15 +17,16 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 40px;
+  padding-inline: 20px;
 
   h1 {
     font-size: clamp(1.2rem, 3vw, 3rem);
     text-align: center;
     padding-bottom: 40px;
+    margin-top: 40px;
 
     span {
-      color: #d25115;
+      color: var(--color-font);
     }
   }
 
@@ -38,7 +38,7 @@
     background-repeat: repeat;
     background-size: cover;
     border-radius: 12px;
-    height: 240px;
+    min-height: 200px;
     width: 100%;
 
     a {
@@ -47,7 +47,8 @@
       justify-content: center;
       width: 280px;
       max-width: clamp(280px 4vw 320px);
-      background-color: #ffffff;
+      color: var(--text-primary);
+      background-color: var(--text-secondary);
       padding: 10px 20px;
       text-align: center;
       font-size: 1rem;
@@ -57,8 +58,8 @@
       position: relative;
 
       &:hover {
-        background-color: #d25115;
-        color: #ffffff;
+        background-color: var(--color-font);
+        color: var(--text-secondary);
       }
     }
 
@@ -73,7 +74,7 @@
         font-size: 1rem;
 
         &:hover {
-          color: #ffffff;
+          color: var(--text-secondary);
         }
       }
     }
