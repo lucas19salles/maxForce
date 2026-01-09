@@ -1,0 +1,30 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  background-color: #000000;
+  margin-top: 20px;
+  padding: 40px;
+
+  ul {
+    display: flex;
+    gap: 20px;
+
+    li {
+      i {
+        font-size: clamp(1rem, 5vw, 2rem);
+        color: var(--text-secondary);
+
+        &:hover {
+          color: var(--color-font);
+        }
+      }
+    }
+  }
+
+  p {
+    color: var(--text-secondary);
+    font-size: clamp(1rem, 3vw, 1.4rem);
+  }
+}
